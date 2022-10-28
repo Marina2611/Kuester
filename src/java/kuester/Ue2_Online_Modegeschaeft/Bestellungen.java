@@ -13,13 +13,13 @@ public class Bestellungen {
 	 TreeMap<Integer, Bestellung> bestellungen = new TreeMap<Integer, Bestellung>();
 	
 	/**
-	* Erstellt eine neue Bestellung aus dem übergebenen Warenkorb
-	* und erstellt durch die Übergabe des Kunden in der Bestellung 
+	* Erstellt eine neue Bestellung aus dem ï¿½bergebenen Warenkorb
+	* und erstellt durch die ï¿½bergabe des Kunden in der Bestellung 
 	* eine Referenz von der Bestellung zum Kunden. Die id dient 
-	* dazu durchgängige Bestellungsnummern zu erhalten.
+	* dazu durchgï¿½ngige Bestellungsnummern zu erhalten.
 	*
 	* @param w ArrayList von Artikeln im Warenkorb
-	* @param k Kunde der die Bestellung ausgelöst hat
+	* @param k Kunde der die Bestellung ausgelï¿½st hat
 	* 
 	* @return Bestellungsnummer der Bestellung
 	**/

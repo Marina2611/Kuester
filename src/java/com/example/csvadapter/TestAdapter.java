@@ -3,7 +3,7 @@ import java.util.Vector;
 
 /***
  * 
- * Tester fŸr die AdapterLšsung
+ * Tester fï¿½r die AdapterLï¿½sung
  * 
  *
  */

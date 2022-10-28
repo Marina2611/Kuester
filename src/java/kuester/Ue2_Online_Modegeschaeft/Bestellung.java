@@ -3,7 +3,7 @@ package kuester.Ue2_Online_Modegeschaeft;
 import java.util.ArrayList;
 
 /**
-* Eine vom Kunden ausgelöste Bestellung. Hat mehrere Artikelpositionen
+* Eine vom Kunden ausgelï¿½ste Bestellung. Hat mehrere Artikelpositionen
 * in denen die einzelnen Artikel hinterlegt sind.
 */
 public class Bestellung {

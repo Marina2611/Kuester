@@ -3,7 +3,7 @@ import java.util.Vector;
 
 
 public class CSVLeserAdapter implements IPersonenLeser {
-	private String file;
+	protected String file;
 	
 	public CSVLeserAdapter(String file)
 	{

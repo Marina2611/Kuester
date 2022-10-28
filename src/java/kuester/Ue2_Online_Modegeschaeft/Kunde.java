@@ -1,9 +1,9 @@
 package kuester.Ue2_Online_Modegeschaeft;
 
 /**
-* Nutzer des Modegeschäfts. Haben einen Warenkorb in den
-* sie Artikel hinzufügen und löschen können. Können aus 
-* dem Warenkorb Bestellungen auslösen.
+* Nutzer des Modegeschï¿½fts. Haben einen Warenkorb in den
+* sie Artikel hinzufï¿½gen und lï¿½schen kï¿½nnen. Kï¿½nnen aus 
+* dem Warenkorb Bestellungen auslï¿½sen.
 */
 public class Kunde implements IKunde {
 
