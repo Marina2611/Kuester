@@ -17,7 +17,7 @@ public class CSVLeserAdapter implements IPersonenLeser {
     public Vector<Person> lesePersonen() {
         CSVLeser csvLeser = new CSVLeser();
         csvLeser.lesePersonenDatei(file);
-        return null;
+        return new Vector<>();
 
 
     }
