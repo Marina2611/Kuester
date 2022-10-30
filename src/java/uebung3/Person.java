@@ -1,8 +1,19 @@
 package uebung3;
 
 public class Person {
-    String vorname;
-    String nachname;
-// ein Konstruktor ist eine Funktion, die man aufruft, um ein Objekt zu erzeugen.
 
+	private String nachname;
+	private String vorname;
+	
+	public Person(String nachname, String vorname)
+	{
+		this.nachname = nachname;
+		this.vorname = vorname;
+	}
+	
+	public void print()
+	{
+		System.out.println(vorname + " " + nachname);
+	}
+	
 }
