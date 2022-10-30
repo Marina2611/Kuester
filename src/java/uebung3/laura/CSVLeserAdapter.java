@@ -1,4 +1,8 @@
-package uebung3;
+package uebung3.laura;
+
+import uebung3.CSVLeser;
+import uebung3.IPersonenLeser;
+import uebung3.Person;
 
 import java.util.Vector;
 

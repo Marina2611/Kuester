@@ -14,6 +14,9 @@ public class CSVLeserAdapterImpl extends CSVLeserAdapter {
 
     @Override
     public Vector<Person> lesePersonen() {
-        return csvLeser.lesePersonenDatei(file).stream().map(arr -> new Person(arr[0], arr[1])).collect(Collectors.toCollection(Vector::new));
+        return csvLeser.lesePersonenDatei(file)
+                .stream()
+                .map(arr -> new Person(arr[0], arr[1]))
+                .collect(Collectors.toCollection(Vector::new));
     }
 }

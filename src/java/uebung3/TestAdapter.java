@@ -1,5 +1,7 @@
 package uebung3;
 
+import uebung3.laura.CSVLeserAdapter;
+
 import java.util.Vector;
 
 /***
