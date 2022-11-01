@@ -16,7 +16,8 @@ public class CSVLeserAdapter implements IPersonenLeser {
     @Override
     public Vector<Person> lesePersonen() {
         CSVLeser csvLeser = new CSVLeser();
-        csvLeser.lesePersonenDatei(file);
+        Vector <String[]> personenDatei = csvLeser.lesePersonenDatei(file);
+
         return new Vector<>();
     }
 }

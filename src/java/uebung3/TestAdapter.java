@@ -1,6 +1,6 @@
 package uebung3;
 
-import uebung3.nina.CSVLeserAdapter;
+import uebung3.mareina.CSVLeserAdapter;
 
 import java.util.Vector;
 
