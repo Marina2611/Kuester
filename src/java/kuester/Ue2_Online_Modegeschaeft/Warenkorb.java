@@ -1,12 +1,10 @@
 package kuester.Ue2_Online_Modegeschaeft;
 
-import kuester.Ue2_Online_Modegeschaeft.Bestellungen;
-
 import java.util.ArrayList;
 
 /**
-* Je ein Objekt pro Kunde vorhanden. In ihm können Artikel abgelegt werden
-* und es kann die Bestellung ausgelöst werden.
+* Je ein Objekt pro Kunde vorhanden. In ihm kï¿½nnen Artikel abgelegt werden
+* und es kann die Bestellung ausgelï¿½st werden.
 */
 public class Warenkorb {
 
@@ -22,10 +20,10 @@ public class Warenkorb {
 	}
 	
 	/**
-	* Löscht den ersten Artikel in der Artikelliste der mit dem 
-	* übergebenen Artikel übereinstimmt.
+	* Lï¿½scht den ersten Artikel in der Artikelliste der mit dem 
+	* ï¿½bergebenen Artikel ï¿½bereinstimmt.
 	*
-	* @param a Artikel, der aus dem Warenkorb gelöscht werden soll
+	* @param a Artikel, der aus dem Warenkorb gelï¿½scht werden soll
 	**/
 	public void loescheArtikelAusWarenkorb(Artikel a){
 		boolean geloescht = false;
@@ -40,7 +38,7 @@ public class Warenkorb {
 	}
 	
 	/**
-	* Löst eine Bestellung aus dem Warenkorb aus, wenn in der 
+	* Lï¿½st eine Bestellung aus dem Warenkorb aus, wenn in der 
 	* Artikelliste des Warenkorbes mindestens ein Artikel
 	* vorhanden ist. 
 	*
@@ -48,9 +46,9 @@ public class Warenkorb {
 	* dem aus die einzelne Bestellung erzeugt und verwaltet
 	* wird.
 	* 
-	* @return Gibt den Wert -1 zurück wenn keine Bestellung 
-	* ausgelöst wird. Gibt die Bestellungsnummer zurück 
-	* wenn eine Bestellung ausgelöst wird.
+	* @return Gibt den Wert -1 zurï¿½ck wenn keine Bestellung 
+	* ausgelï¿½st wird. Gibt die Bestellungsnummer zurï¿½ck 
+	* wenn eine Bestellung ausgelï¿½st wird.
 	**/
 	public int bestellen(Bestellungen best){
 		int nr = -1;

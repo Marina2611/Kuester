@@ -3,7 +3,7 @@ package kuester.Ue2_Online_Modegeschaeft;
 import kuester.Ue2_Online_Modegeschaeft.Artikel;
 
 /**
-* Unterklasse der Klasse Artikel. Speichert zusätzlich
+* Unterklasse der Klasse Artikel. Speichert zusï¿½tzlich
 * das verwendete Material ab.
 */
 public class Kleidungsartikel extends Artikel {

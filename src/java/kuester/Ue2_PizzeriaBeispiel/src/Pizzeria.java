@@ -24,7 +24,7 @@ public class Pizzeria {
 			{
 				pizza = new BerlinerThunfischPizza();
 			}
-		} else if (art.equals("MŸnchen"))
+		} else if (art.equals("Mï¿½nchen"))
 		{
 			if (typ.equals("Salami"))
 			{
@@ -39,7 +39,7 @@ public class Pizzeria {
 				pizza = new MuenchenerThunfischPizza();
 			}
 		} else {
-			System.out.println("Fehler: UngŸltiger Pizzatyp");
+			System.out.println("Fehler: Ungï¿½ltiger Pizzatyp");
 			return null;
 		}
 		pizza.vorbereiten();

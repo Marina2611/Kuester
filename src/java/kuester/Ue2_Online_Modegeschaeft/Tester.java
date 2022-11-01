@@ -17,7 +17,7 @@ public class Tester {
 		Kunde Mueller = new Kunde("1;Mueller;Tom");
 		
 		
-		//Erstellen des 1. Warenkorbes mit anschließendem Bestellvorgang
+		//Erstellen des 1. Warenkorbes mit anschlieï¿½endem Bestellvorgang
 		Mueller.getWarenkorb().hinzufuegenArtikelZuWarenkorb(NikeFree);
 		Mueller.getWarenkorb().hinzufuegenArtikelZuWarenkorb(AdidasJacke);
 		int best1 = Mueller.getWarenkorb().bestellen(best);
@@ -26,14 +26,14 @@ public class Tester {
 		//Systemausgaben der 1. Bestellung 
 		System.out.println("Bestellung: " + best.getBestellung(best1).getBestellNr());
 		System.out.println(best.getBestellung(best1).getKunde().getNachname());
-		System.out.println(best.getBestellung(best1).getGesamtbetrag() + "€");
+		System.out.println(best.getBestellung(best1).getGesamtbetrag() + "ï¿½");
 		
 		for(int i = 0; i < best.getBestellung(best1).getArtikelpositionen().size(); i++){
 			System.out.println(best.getBestellung(best1).getArtikelpositionen().get(i).getBezeichnung());
 		}
 		
 		
-		//Erstellen des 2. Warenkorbes mit anschließendem Bestellvorgang
+		//Erstellen des 2. Warenkorbes mit anschlieï¿½endem Bestellvorgang
 		Mueller.getWarenkorb().hinzufuegenArtikelZuWarenkorb(NewBalanceWi);
 		Mueller.getWarenkorb().hinzufuegenArtikelZuWarenkorb(NikeFree);
 		Mueller.getWarenkorb().hinzufuegenArtikelZuWarenkorb(TommyHilfigerShirt);
@@ -45,7 +45,7 @@ public class Tester {
 		//Systemausgaben der 2. Bestellung
 		System.out.println("Bestellung " + best.getBestellung(best2).getBestellNr());
 		System.out.println(best.getBestellung(best1).getKunde().getNachname());
-		System.out.println(best.getBestellung(best2).getGesamtbetrag() + "€");
+		System.out.println(best.getBestellung(best2).getGesamtbetrag() + "ï¿½");
 		
 		for(int i = 0; i < best.getBestellung(best2).getArtikelpositionen().size(); i++){
 			System.out.println(best.getBestellung(best2).getArtikelpositionen().get(i).getBezeichnung());

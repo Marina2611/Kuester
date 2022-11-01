@@ -1,7 +1,7 @@
 package kuester.Ue2_Online_Modegeschaeft;
 
 /**
-* Artikel können von Kunden in deren Warenkorb hinzugefügt werden
+* Artikel kï¿½nnen von Kunden in deren Warenkorb hinzugefï¿½gt werden
 * und dann bestellt werden.
 */
 public class Artikel {

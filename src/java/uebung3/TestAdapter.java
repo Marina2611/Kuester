@@ -1,9 +1,12 @@
-package com.example.csvadapter;
+package uebung3;
+
+import uebung3.mareina.CSVLeserAdapter;
+
 import java.util.Vector;
 
 /***
  * 
- * Tester fŸr die AdapterLšsung
+ * Tester fï¿½r die AdapterLï¿½sung
  * 
  *
  */
@@ -12,7 +15,7 @@ public class TestAdapter {
 
 	public static void main (String[] args)
 	{
-		IPersonenLeser leser = new CSVLeserAdapter("personen.csv");
+		IPersonenLeser leser = new CSVLeserAdapter("src/resources/com/example/csvadapter/person.csv");
 		Vector<Person> personen = leser.lesePersonen();
 		
 		for (Person person : personen)
