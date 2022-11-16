@@ -34,6 +34,5 @@ public abstract class ANameSemesterView implements IView {
      */
     public void aktualisieren(IModel model) {
         semesterLabel.setText(model.getSemester()+"");
-
     }
 }

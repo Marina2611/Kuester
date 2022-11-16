@@ -13,6 +13,7 @@ public class SetStudentNumberView implements IView{
     public SetStudentNumberView(StudentController scontroller, StudentModel model) {
         controller = scontroller;
         this.model = model;
+        model.anmelden(this);
         createControlElements();
     }
 

@@ -51,6 +51,7 @@ public class StudentModel implements IModel {
 
     public void setNumber(int number) {
         this.number = number;
+        benachrichtigen();
     }
 
 
