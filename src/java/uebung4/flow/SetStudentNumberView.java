@@ -4,10 +4,12 @@ import javax.swing.*;
 import java.awt.*;
 
 
-public class SetStudentNumberView implements IView{
+public class SetStudentNumberView implements IView {
     private final StudentController controller;
     private final StudentModel model;
     private JTextField textField;
+    private JLabel errorLabel;
+    private JFrame jFrame;
 
 
     public SetStudentNumberView(StudentController scontroller, StudentModel model) {
@@ -20,22 +22,40 @@ public class SetStudentNumberView implements IView{
 
     public void createControlElements() {
         var saveButton = new JButton("Save");
-        saveButton.addActionListener(e -> controller.saveStudentNumber(3));
-        JFrame controlFrame = new JFrame("Control Panel");
-        controlFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        saveButton.addActionListener(e -> onClick());
+        jFrame = new JFrame("Control Panel");
+        jFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         textField = new JTextField(model.getNumber() + "");
+        errorLabel = new JLabel();
 
-        Container contentPane = controlFrame.getContentPane();
+        Container contentPane = jFrame.getContentPane();
         contentPane.setLayout(new FlowLayout());
         contentPane.add(textField, BorderLayout.CENTER);
+        contentPane.add(errorLabel, BorderLayout.CENTER);
         contentPane.add(saveButton, BorderLayout.CENTER);
-        controlFrame.pack();
-        controlFrame.setVisible(true);
-        controlFrame.setLocation(200, 100);
+
+        jFrame.pack();
+        jFrame.setVisible(true);
+        jFrame.setLocation(200, 100);
+    }
+
+    private void onClick() {
+        try {
+            controller.saveStudentNumber(readIntFromTextField());
+            errorLabel.setText("");
+        } catch (NumberFormatException numberFormatException) {
+            numberFormatException.printStackTrace();
+            errorLabel.setText(numberFormatException.getLocalizedMessage());
+        }
+        jFrame.pack();
+    }
+
+    private int readIntFromTextField() {
+        return Integer.parseInt(textField.getText());
     }
 
     @Override
     public void aktualisieren(IModel model) {
-        this.textField.setText(model.getNumber()+"");
+        this.textField.setText(model.getNumber() + "");
     }
 }
