@@ -10,3 +10,11 @@ public class TemperaturAnzeige implements Beobachter {
         System.out.println(subjekt.gibZustand());
     }
 }
+
+// registriereBeobachter
+// aktualisiereBeobachter
+// entferneBeobachter
+/*
+Zeichnen sie das BeobachterMuster in UML da müssen auch die Methoden
+rein zeichnen also registriere, aktualisiere, entferne..
+ */
